@@ -1,54 +1,145 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-seriff;
-}
+  <meta charset="UTF-8">
 
-.topnav {
-  overflow: hidden;
-  background-color: #fffcad;
-}
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-.topnav a {
-  float: right;
-  color: #7f648d;
-  text-align: center;
-  padding: 20px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
+  <title>Little Stars</title>
 
-.topnav a.active {
-  background-color: rgb(235, 114, 134);
-  color: white;
-}
+  <style>
 
-</style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /* Navigation */
+    .topnav {
+      overflow: hidden;
+      background-color: #fffcad;
+    }
+
+    /* Logo */
+    .logo {
+      float: left;
+      width: 50px;
+      height: 51px;
+    }
+
+    /* Navigation links */
+    .topnav a {
+      float: right;
+      color: #7f648d;
+      text-align: center;
+      padding: 20px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+    /* Active navigation link */
+    .topnav a.active {
+      background-color: rgb(235, 114, 134);
+      color: white;
+    }
+
+    /* Navigation hover effect */
+    .topnav a:hover {
+      background-color: #ddd;
+    }
+
+    /* Welcome section */
+    .welcome {
+      padding: 16px 100px;
+      background-color: rgb(199, 235, 255);
+    }
+
+    /* Activities section */
+    .activities {
+      padding: 20px;
+      text-align: center;
+      min-height: 300px;
+    }
+
+    /* Footer */
+    footer {
+      clear: both;
+      background-color: #777;
+      padding: 10px;
+      text-align: center;
+      color: white;
+    }
+
+    /* Mobile responsive design */
+    @media (max-width: 600px) {
+
+      .topnav a {
+        float: none;
+        display: block;
+        text-align: center;
+      }
+
+      .logo {
+        float: none;
+        display: block;
+        margin: auto;
+      }
+
+      .welcome {
+        padding: 16px 20px;
+      }
+
+    }
+
+  </style>
 </head>
+
 <body>
 
-  <img src="images5.jpeg" width="50" height="51" style="float:left";>
-<div class="topnav">
-  <a href="#contact">Contact</a>
-  <a href="#gallery">Gallery</a>
-  <a href="#activities">Activities</a>
-  <a href="#about">About</a>
-  <a class="active "href="#home">Home</a>
-</div>
+  <!-- Navigation bar -->
+  <div class="topnav">
 
-<div style="padding-top:16px; background-color: rgb(199, 235, 255);">
-  <h2 style="padding-left: 100px;">Top navigation example</h2>
-  <p style="padding-left: 100px;">Some content..</p>
-</div>  
+    <img src="images5.jpeg" alt="Little Stars Logo" class="logo">
 
-<div style="padding-top: 20px;">
-  <h2 style="padding-left: 500px;">Our Activities</h2>
-</div>
+    <a href="#contact">Contact</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#activities">Activities</a>
+    <a href="#about">About</a>
+    <a class="active" href="#home">Home</a>
+
+  </div>
 
 
+  <!-- Welcome section -->
+  <div class="welcome">
+
+    <h2>Top Navigation Example</h2>
+
+    <p>Some content..</p>
+
+  </div>
+
+
+  <!-- Activities section -->
+  <div class="activities" id="activities">
+
+    <h2>Our Activities</h2>
+
+  </div>
+
+
+  <!-- Footer -->
+  <footer>
+
+    <h2>© 2024 Little Stars. All rights reserved.</h2>
+
+  </footer>
 
 </body>
+
 </html>
